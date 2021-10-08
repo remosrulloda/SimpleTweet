@@ -31,10 +31,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="229dp"
+        android:layout_toEndOf="@+id/userName"
+        android:textColor="#AEA7A7"
+        android:textSize="10sp"
+        tools:text="\@ryzen5198" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="ryzen5198" />
+        tools:text="Ryzen" />
 
     <TextView
         android:id="@+id/tvBody"
