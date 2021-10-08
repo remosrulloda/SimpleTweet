@@ -179,10 +179,10 @@ public class TimelineActivity extends AppCompatActivity {
                     List<Tweet> tweetsFromNetwork = Tweet.fromJsonArray(jsonArray);
                     TimelineActivity.this.tweets.addAll(Tweet.fromJsonArray(jsonArray));
                     adapter.notifyDataSetChanged();
-//                    adapter.clear();
-//                    adapter.addAll(tweetsFromNetwork);
+                    adapter.clear();
+                    adapter.addAll(tweetsFromNetwork);
                     // Now we call setRefreshing(false) to signal refresh has finished
-//                    swipeContainer.setRefreshing(false);
+                    swipeContainer.setRefreshing(false);
                     AsyncTask.execute(new Runnable() {
                         @Override
                         public void run() {

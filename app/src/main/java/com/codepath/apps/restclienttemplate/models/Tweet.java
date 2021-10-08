@@ -49,7 +49,7 @@ public class Tweet {
         Tweet tweet = new Tweet(); // Build the tweet as per the fields
         tweet.body = jsonObject.getString("text"); // from API
         tweet.createdAt = jsonObject.getString("created_at");
-        tweet.username = jsonObject.getString("name");
+//        tweet.username = jsonObject.getString("name");
         tweet.id = jsonObject.getLong("id");
         // will take in a JSON object and returns the User model
         User user = User.fromJson(jsonObject.getJSONObject("user"));
